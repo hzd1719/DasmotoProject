@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .grid-container {
+      display: grid;
+      grid-template-columns: 12fr;
+      grid-template-rows: repeat(3, auto);
+    
+  }
+
+  .section {
+      display: grid;   
+      justify-items: center;
+      
+  }
+
+  
+h1 {
+    font-family: Helvetica;
+    font-weight: bold;
+    color: khaki;
+    text-align: center;
+    background-image: url("C:/Users/User/Desktop/webdev/DasmotoProject/resources/pattern.jpeg");
+    background-size: cover;
+    font-size: 7vw;
+    /*background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-2/pattern.jpeg);*/
+    /*background-color: #cccccc;*/
+}
+
+h2 {
+   font-family: Helvetica;
+   font-size: 3rem;
+   font-weight: bold;
+   color:white;
+   text-align: center;
+   width: 100%;
+  
+}
+
+.hs {
+    width: 100%;
+    
+}
+
+.green {
+    background-color: mediumspringgreen;
+}
+
+.red {
+    background-color: lightcoral;
+}
+
+.blue {
+    background-color: skyblue;
+}
+
+p {
+    font-family: Helvetica;
+   
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.price {
+    font-weight: bold;
+    color: blue;
+}
+
+footer {
+    background-color: black;
+    border-top: 2px solid tomato;
+    height: 100px;
+    color: white;
+    text-align: center;
+}
+
+ /* Mobile Styles */
+ @media only screen and (max-width: 576px) {
+    p {
+        text-align:center;
+    }
+  }
+  
+  /* Tablet Styles */
+  @media only screen and (min-width: 577px) and (max-width: 992px) {
+        p {
+            width: 50%;
+        }
+  }
+  
+  /* Desktop Styles */
+  @media only screen and (min-width: 993px) {
+    .grid-container {
+        grid-template-columns: 4fr 4fr 4fr;
+        
+    }
+
+    .section {
+        display: block;
+        float: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .section p {
+        width: 50%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }    
+  }
